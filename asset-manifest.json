@@ -1,0 +1,32 @@
+{
+  "files": {
+    "main.css": "/static/css/main.94e2fdce.css",
+    "main.js": "/static/js/main.5fa6e58b.js",
+    "static/media/bg-familia-vitalinea@2x.png": "/static/media/bg-familia-vitalinea@2x.22373133fb749ca2e396.png",
+    "static/media/img-bote-fresa@2x.png": "/static/media/img-bote-fresa@2x.58447fd50fbc717d0b7c.png",
+    "static/media/img-vitalinea-bebible@2x.png": "/static/media/img-vitalinea-bebible@2x.91cea4ba227c2b7a0fe5.png",
+    "static/media/img-vitalinea-sin-azucar@2x.png": "/static/media/img-vitalinea-sin-azucar@2x.497f79fba52157db48c7.png",
+    "static/media/img-vitalinea-griego@2x.png": "/static/media/img-vitalinea-griego@2x.2a5fbc17179ec2b7de41.png",
+    "static/media/img-fresas-2.png": "/static/media/img-fresas-2.2acf90d691b359040597.png",
+    "static/media/img-fresas-8.png": "/static/media/img-fresas-8.9b3f35b0ea124f329e0a.png",
+    "static/media/img-fresas-4.png": "/static/media/img-fresas-4.0c89b7db2be3cbcb8ca9.png",
+    "static/media/img-fresas-3.png": "/static/media/img-fresas-3.de0a24014a11c16c0616.png",
+    "static/media/img-fresas-9.png": "/static/media/img-fresas-9.de0a24014a11c16c0616.png",
+    "static/media/img-fresas-7.png": "/static/media/img-fresas-7.68f827acb5d1f774c7fc.png",
+    "static/media/img-fresas-6.png": "/static/media/img-fresas-6.0796a382b456c49487d9.png",
+    "static/media/logo-vitalinea@3x.png": "/static/media/logo-vitalinea@3x.41d0a78f1599de5d4385.png",
+    "static/media/img-fresas-5.png": "/static/media/img-fresas-5.2a3d0ebefdfcee0e2287.png",
+    "static/media/logo-vitalinea@2x.png": "/static/media/logo-vitalinea@2x.b893401310217448e5ad.png",
+    "static/media/img-social-youtube.svg": "/static/media/img-social-youtube.f7d41356825e36b39b87c7e48adee95a.svg",
+    "static/media/img-social-instagram.svg": "/static/media/img-social-instagram.2dbd63f22364a0e52cc6a8ae37015232.svg",
+    "index.html": "/index.html",
+    "static/media/img-social-facebook.svg": "/static/media/img-social-facebook.998ed86d85c146b5ff6314efec504f0c.svg",
+    "static/media/flecha.svg": "/static/media/flecha.db1d7c84e2749814f115a5d1cfde6e2d.svg",
+    "main.94e2fdce.css.map": "/static/css/main.94e2fdce.css.map",
+    "main.5fa6e58b.js.map": "/static/js/main.5fa6e58b.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.94e2fdce.css",
+    "static/js/main.5fa6e58b.js"
+  ]
+}
