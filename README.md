@@ -1,1 +1,1 @@
-Vitalinea web design propousal
+Vitalinea web development proposal
