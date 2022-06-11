@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/vitalinea-web/static/css/main.c4f9782b.css",
+    "main.css": "/vitalinea-web/static/css/main.cb1a7b51.css",
     "main.js": "/vitalinea-web/static/js/main.47426ddb.js",
     "static/media/bg-familia-vitalinea@2x.png": "/vitalinea-web/static/media/bg-familia-vitalinea@2x.22373133fb749ca2e396.png",
     "static/media/img-bote-fresa@2x.png": "/vitalinea-web/static/media/img-bote-fresa@2x.58447fd50fbc717d0b7c.png",
@@ -22,11 +22,11 @@
     "index.html": "/vitalinea-web/index.html",
     "static/media/img-social-facebook.svg": "/vitalinea-web/static/media/img-social-facebook.998ed86d85c146b5ff6314efec504f0c.svg",
     "static/media/flecha.svg": "/vitalinea-web/static/media/flecha.db1d7c84e2749814f115a5d1cfde6e2d.svg",
-    "main.c4f9782b.css.map": "/vitalinea-web/static/css/main.c4f9782b.css.map",
+    "main.cb1a7b51.css.map": "/vitalinea-web/static/css/main.cb1a7b51.css.map",
     "main.47426ddb.js.map": "/vitalinea-web/static/js/main.47426ddb.js.map"
   },
   "entrypoints": [
-    "static/css/main.c4f9782b.css",
+    "static/css/main.cb1a7b51.css",
     "static/js/main.47426ddb.js"
   ]
 }
