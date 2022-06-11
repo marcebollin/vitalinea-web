@@ -67,11 +67,11 @@ const NutritionalInfo = ({ flavor }) => {
         {flavor.nutritionalValues.flat().map((element, index) => {
           const isTitle = index % 2 === 0
           return(
-            <span 
+            <h4 
               key={`NutritionalInfo__table-${index}`}
               className={isTitle ? "table-title" : "table-value"}>
             {element}
-            </span>
+            </h4>
           )
         })}
       </div>

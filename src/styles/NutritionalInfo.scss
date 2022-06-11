@@ -65,13 +65,12 @@
     max-width: 500px;
     width: calc(100% - 40px);
     margin: 0 auto;
-    padding: 0 30px;
+    padding: 10px 30px;
     row-gap: 8px;
     background-color: rgba(250, 250, 250);
 
-    & > span {
-      display: flex;
-      align-items: center;
+    & > h4 {
+      display: inline-block;
       height: 100%;
       width: 100%;
       color: $purple;

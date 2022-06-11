@@ -21,5 +21,9 @@
     width: 100%;
     gap: 10px 20px;
     list-style: none; 
+
+    & button {
+      color: black;
+    }
   }
 }
