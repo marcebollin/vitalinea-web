@@ -1,0 +1,34 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: 'Open Sans', sans-serif;
+  scroll-behavior: smooth;
+}
+
+#root {
+  position: relative;
+}
+
+body, main, html {
+  overflow-x: hidden;
+}
+
+p {
+  max-width: 70ch;
+}
+
+.strawberry-decoration {
+  position: absolute;
+}
+
+a, button {
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+}

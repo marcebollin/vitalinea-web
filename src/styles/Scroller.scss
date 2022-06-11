@@ -1,0 +1,49 @@
+@import './colors';
+
+.Scroller {
+  overflow-x: scroll;
+  display: flex;
+  align-items: flex-end;
+  gap: 40px;
+  padding-bottom: 25px;
+  scroll-snap-type: x mandatory;
+
+  & > * {
+    scroll-snap-align: center;
+
+    &:first-child {
+      padding-left: 40px;
+    }
+
+    &:last-child {
+      padding-right: 40px;
+    }
+  }
+
+  &::-webkit-scrollbar {
+    height: 5px;
+  }
+  
+  &::-webkit-scrollbar-track {
+    background-color: rgba(0, 0, 0, 0.2);
+  }
+  
+  &::-webkit-scrollbar-thumb {
+    background-color: $purple;   
+    border-radius: 15px;
+  }
+}
+
+@media (min-width: 550px) {
+  .Scroller {
+    gap: 0;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1300px;
+    justify-content: space-between;
+
+    &::-webkit-scrollbar {
+      display: none;
+    }
+  }
+}

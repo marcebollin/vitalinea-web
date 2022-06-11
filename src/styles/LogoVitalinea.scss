@@ -1,0 +1,9 @@
+.LogoVitalinea {
+  object-fit: contain;
+}
+
+@media (max-width: 600px) {
+  .LogoVitalinea {
+    max-width: 100px;
+  }
+}

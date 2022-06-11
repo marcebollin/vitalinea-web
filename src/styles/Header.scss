@@ -1,0 +1,20 @@
+.Header {
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  top: 0;
+  width: 100%;
+  background-image: linear-gradient(to bottom, #ffffff, rgba(255,255,255,0.67));
+  
+  padding: 10vw {
+    top: 18px;
+    bottom: 15px;
+  }
+}
+
+@media (min-width: 900px) {
+  .Header {
+    align-items: center;
+  }
+}

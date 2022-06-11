@@ -1,0 +1,43 @@
+@import './colors';
+
+.ProductsFamily {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 auto;
+  padding: 5px {
+    top: 40px;
+    bottom: 80px;
+  }
+  
+  & h2 {
+    align-self: center;
+    margin-bottom: 100px;
+    text-transform: uppercase;
+    color: $purple;
+    font-weight: 300;
+  }
+
+  &__product {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    & > img {
+      width: 150px;
+    }
+
+    & > figcaption {
+      color: $purple
+    }
+  }
+}
+
+@media (min-width: 800px) {
+  .ProductsFamily {
+    &__product > img {
+      max-width: 300px;
+      width: 20vw;
+    }
+  }
+}

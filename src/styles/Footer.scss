@@ -1,0 +1,82 @@
+@import './colors';
+
+.Footer {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding: 30px 20px;
+
+  &__brands {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+
+    & > img:first-of-type {
+      height: 50px;
+    }
+
+    & > img:last-of-type {
+      height: 30px;
+    }
+  }
+
+  &__law {
+    margin-bottom: 10px;
+
+    & ul {
+      display: flex;
+      justify-content: center;
+      list-style: none;
+
+      & li {
+        font-weight: 300;
+        font-size: 0.8rem;
+        line-height: 0.9rem;
+        padding: 0 10px;
+        text-align: center;
+        
+        & a {
+          color: black;
+          
+          &:hover {
+            color: $purple;
+          }
+        }
+
+        &:not(li:last-of-type) {
+          border-right: 1px solid $purple;
+        }
+      }
+    }
+  }
+
+  &__copyright {
+    margin: 0 auto;
+    text-align: center;
+    font-weight: 500;
+  }
+}
+
+@media (min-width: 800px) {
+  .Footer {
+    &__copyright {
+      margin: 0;
+      font-size: 0.8rem;
+      margin-left: 10px;
+    }
+
+    &__law, &__copyright {
+      padding-left: 70px;
+      display: flex;
+      width: 100%;
+      font-weight: 300;
+    }
+
+    &__brands  {
+      z-index: -50;
+      position: absolute;
+      width: 90%;
+    }
+  }
+}

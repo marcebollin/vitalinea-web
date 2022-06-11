@@ -1,0 +1,66 @@
+@import './colors';
+
+.MobileMenu {
+  z-index: 100;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: space-around;
+  width: 27px;
+  height: 27px;
+
+  &__check {
+    cursor: pointer;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+
+    &:checked ~ .MobileMenu__line:nth-child(2){
+      transform: rotate(45deg);
+    }
+
+    &:checked ~ .MobileMenu__line:nth-child(3){
+      transform: translateX(100px);
+      opacity: 0;
+    }
+
+    &:checked ~ .MobileMenu__line:nth-child(4){
+      transform: rotate(-45deg);
+    }
+
+    &:checked ~ .MobileMenu__content {
+      transform: translate(0px, 8px);
+    }
+  } 
+
+  &__line {
+    display: inline-block;
+    width: 100%;
+    height: 3px;
+    border-radius: 10px;
+    background-color: $purple;
+    pointer-events: none;
+    transition: opacity 200ms ease-in-out, transform 300ms ease-in-out;
+
+    &:nth-child(2) {
+      transform-origin: 0%;
+    }
+
+    &:nth-child(4) {
+      transform-origin: 0 100%;
+    }
+  }
+
+  &__content {
+    z-index: -1;
+    position: absolute;
+    top: -50px;
+    right: -10vw;
+    transform: translate(100%, 8px);
+    transition: transform 500ms ease-in-out;
+    background-color: #F8485E;
+    box-shadow: 0 14px 44px 0 rgba(0, 0, 0, 0.15);
+  }
+}

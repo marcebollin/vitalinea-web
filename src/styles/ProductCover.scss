@@ -1,0 +1,218 @@
+@import './_colors.scss';
+
+.ProductCover {
+  position: relative;
+  width: 100%;
+  display: grid;
+  grid-template: 1fr repeat(4, auto) / 1fr;
+  place-items: center;
+
+  & .desktop-strawberry {
+    display: none;
+  }
+
+  &__top-left-strawberry-mobile {
+    z-index: 100;
+    left: -125px;
+    top: 80px;
+    transform: rotateY(180deg);
+  }
+
+  &__top-right-strawberry-mobile {
+    z-index: -50;
+    top: -120px;
+    right: -20px;
+    width: 180px;
+  }
+
+  &__image {
+    margin: auto {
+      top: 95px;
+      bottom: -55px;
+    }
+    width: 230px;
+  }
+
+  &__description {
+    display: flex;
+    flex-direction: column;
+    margin: 20px 0;
+
+    & h1 {
+      color: $purple;
+      font-weight: 500;
+      margin-bottom: 10px;
+    }
+
+    & p {
+      font-size: 0.95rem;
+      font-weight: 300;
+      margin-bottom: 20px;
+    }
+
+    & button {
+      align-self: center;
+    }
+  }
+
+  &__certificates {
+    display: flex;
+    justify-content: center;
+    width: 80%;
+    gap: 30px;
+
+    & img {
+      height: 62px;
+    }
+  }
+
+  &__down-arrow {
+    z-index: 100;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, calc(100% - 25px));
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 45%;
+    border-radius: 50%;
+    background-color: $purple;
+    width: 50px;
+    height: 50px;
+  }
+  
+
+  & > * {
+    padding: auto {
+      left: 20px;
+      right: 20px;
+    }
+  }
+
+  // slanted background
+  &::before {
+    z-index: -100;
+    content: "";
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: calc(100% + 25px);
+    transform: skewY(7deg);
+    transform-origin: left;
+    box-shadow: 0 14px 44px 0 rgba(0, 0, 0, 0.09);
+    background-image: linear-gradient(to bottom, #f9e6e6, #ebacac);
+  }
+}
+
+@media (min-width: 1300px) {
+  .ProductCover {
+    padding-top: 120px;
+    grid-template: 80px 100px 220px 120px / 1fr 2fr;
+    justify-items: stretch;
+
+    & .mobile-strawberry {
+      display: none;
+    }
+
+    & .desktop-strawberry {
+      display: inline-block;
+      z-index: -50;
+
+      &.ProductCover__top-left-strawberry {
+        width: 170px;
+        top: -5px;
+        left: 170px;
+        transform: rotateY(180deg);
+      }
+
+      &.ProductCover__bottom-right-strawberry {
+        top: 90%;
+        right: 110px;
+      }
+
+      &.ProductCover__top-right-strawberry {
+        width: 500px;
+        top: -15px;
+        right: 200px;
+      }
+    }
+
+    &__image {
+      width: 380px;
+      grid-column: 1 / 2;
+      grid-row: span 4;
+      margin: auto {
+        left: 200px;
+      };
+    }
+
+    & .FlavorsList,
+    &__description,
+    &__certificates{
+      grid-column: 2 / 3;
+    }
+    
+    & .FlavorsList {
+      align-items: flex-start;
+      grid-row: 2 / 3;
+
+      & > ul {
+        justify-content: flex-start;
+      }
+    }
+    
+    &__description {
+      align-self: end;
+      grid-row: 3 / 4;
+      
+      & > h1 {
+        margin-bottom: 30px;
+      }
+
+      & > button {
+        align-self: flex-start;
+      }
+    }
+
+    &__certificates {
+      align-items: center;
+      justify-content: flex-start;
+      grid-row: 4 / 5;
+    }
+
+    &__down-arrow {
+      transform: translate(-50%, calc(100% + 25px));
+    }
+
+    // slanted background
+    &::before {
+      top: -100px;
+      height: calc(100% + 120px);
+    }
+  }
+}
+
+@media (min-width: 700px) {
+  .ProductCover {
+    &__description {
+      & h1 {
+        font-size: 2.3rem;
+        letter-spacing: 1px;
+        font-weight: 300;
+      }
+
+      & p {
+        font-size: 1rem;
+        line-height: 1rem;
+        line-height: 1.2rem;
+        max-width: 500px;
+      }
+    }
+    
+    // slanted background
+    &::before {
+      top: -100px;
+      height: calc(100% + 100px);
+    }
+  }
+}
