@@ -15,7 +15,11 @@
     letter-spacing: 1px;
     gap: 20px;
     
-    &:hover {
+    & a {
+      color: black;
+    }
+
+    & a:hover {
       color: $purple;
     }
 
